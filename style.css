@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -9,14 +8,14 @@ body {
 header {
   position: relative;
   height: 100vh;
-  background: url('assets/bg.jpg') no-repeat center center/cover;
+  background: linear-gradient(135deg, #007B8A, #00BCD4);
 }
 
 .overlay {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.4);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,8 +43,8 @@ h1 {
 }
 
 .btn {
-  background: #00bcd4;
-  color: white;
+  background: #ffffff;
+  color: #007B8A;
   padding: 10px 20px;
   text-decoration: none;
   font-weight: bold;
