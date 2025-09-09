@@ -23,6 +23,18 @@ header {
   text-align: center;
   padding: 0 20px;
 }
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  color: white;
+  background: linear-gradient(135deg, 
+                              #27ae60, #2980b9);
+  position: relative;
+}
 
 .hero-content {
   color: white;
