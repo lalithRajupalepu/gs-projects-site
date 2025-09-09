@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -8,14 +9,14 @@ body {
 header {
   position: relative;
   height: 100vh;
-  background: linear-gradient(135deg, #007B8A, #00BCD4);
+  background: url('assets/bg.jpg') no-repeat center center/cover;
 }
 
 .overlay {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,14 +26,10 @@ header {
 
 .hero-content {
   color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .logo {
-  max-width: 150px;
-  height: auto;
+  max-width: 100px;
   margin-bottom: 20px;
 }
 
@@ -47,8 +44,8 @@ h1 {
 }
 
 .btn {
-  background: #ffffff;
-  color: #007B8A;
+  background: #00bcd4;
+  color: white;
   padding: 10px 20px;
   text-decoration: none;
   font-weight: bold;
@@ -90,4 +87,58 @@ footer {
   padding: 20px;
   background: #333;
   color: white;
+}
+.projects-section {
+  padding: 60px 20px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sub-title {
+  margin: 40px 0 20px;
+  font-size: 1.5rem;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #27ae60;
+}
+
+.card p {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.card span {
+  font-size: 0.9rem;
+  color: #7f8c8d;
 }
